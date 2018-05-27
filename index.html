@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+   <div class="wrapper">
+       <header>
+           <nav>
+               <div class="menu-icon">
+                   <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">LOGO</div>
+               <div class="menu">
+                   <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About</a></li>
+                       <li><a href="#">Contact</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </header>
+       
+       <div class="content">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae possimus enim officiis praesentium atque impedit, minus qui repellendus facere perferendis, inventore omnis voluptates maiores! Autem quod, veniam asperiores esse. Nulla!</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, nobis soluta libero quae aliquam repellendus voluptatem id quidem distinctio enim laboriosam assumenda velit nihil debitis corporis similique officia, inventore ipsum. Sint, asperiores dolore laborum voluptates commodi nulla mollitia nam id.</p>
+       </div>
+       
+       
+       
+       
+   </div>
+   
+    <script type="text/javascript">
+        //menu toggle
+        $(document).ready(function(){
+            $(".menu-icon").on("click", function(){
+                $("nav ul").toggleClass("showing");
+            });
+        });
+        //scroll effect
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black');
+            }
+        })
+    
+    </script>
+    
+</body>
+</html>
